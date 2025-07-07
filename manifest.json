@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Disable Doom Scroll on YouTube Shorts",
+  "version": "1.0",
+  "description": "Removes or disables the scrolling buttons and scroll wheel on YouTube Shorts.",
+  "permissions": ["scripting"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+} 
